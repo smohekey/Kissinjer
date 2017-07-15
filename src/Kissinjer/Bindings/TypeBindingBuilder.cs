@@ -18,7 +18,7 @@
 
 		private Expression BuildExpression() {
 			if (!TryResolveConstructor(ImplementationType, out var constructorInfo, out var arguments)) {
-				throw new BindingNotResolvedException();
+				throw new BindingNotResolvedException($"Couldn't find suitable constructor for implementation type {ImplementationType.FullName}");
 			}
 
 			return Expression.New(constructorInfo, arguments);
