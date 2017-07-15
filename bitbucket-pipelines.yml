@@ -4,14 +4,14 @@ pipelines:
     - step:
         script:
           # Generate build number
-          - BUILD_NUMBER=`git log --oneline | wc -l`
+          - BUILD_NUMBER=`hg id -i`
           - echo "Build number':' ${BUILD_NUMBER}"
           # Restore packages
           - dotnet restore
           # Build project
           - dotnet build
           # Run tests
-          - dotnet test
+          - dotnet test test/Kissinjer.Tests
           # Create package
           - dotnet pack --configuration ${BUILD_CONFIGURATION} --version-suffix=beta-$BUILD_NUMBER project.json
           # Push generated package(s)
