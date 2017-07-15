@@ -1,0 +1,18 @@
+image: microsoft/dotnet:1.1-sdk
+pipelines:
+  default:
+    - step:
+        script:
+          # Generate build number
+          - BUILD_NUMBER=`git log --oneline | wc -l`
+          - echo "Build number':' ${BUILD_NUMBER}"
+          # Restore packages
+          - dotnet restore
+          # Build project
+          - dotnet build
+          # Run tests
+          - dotnet test
+          # Create package
+          - dotnet pack --configuration ${BUILD_CONFIGURATION} --version-suffix=beta-$BUILD_NUMBER project.json
+          # Push generated package(s)
+          #- "for file in bin/${BUILD_CONFIGURATION}/*.nupkg; do curl -X POST \"${MYGET_NUGET_URL}/package\" -H \"X-NuGet-ApiKey: ${MYGET_NUGET_APIKEY}\" -T $file; done"
