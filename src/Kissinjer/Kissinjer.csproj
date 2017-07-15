@@ -6,7 +6,10 @@
     <Company>Insightful Systems</Company>
     <Authors>Scott Mohekey</Authors>
     <Description>K.I.S.S Dependency Injection framework.</Description>
-    <Copyright>Insightful Systems</Copyright>
+    <Copyright>Copyright © Scott Mohekey 2017</Copyright>
+    <PackageProjectUrl>https://bitbucket.org/insightful-systems/kissinjer</PackageProjectUrl>
+    <RepositoryUrl>https://bitbucket.org/insightful-systems/kissinjer</RepositoryUrl>
+    <PackageTags>injection ioc</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
