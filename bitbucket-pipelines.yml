@@ -11,7 +11,7 @@ pipelines:
           # Build project
           - dotnet build
           # Run tests
-          - dotnet test test/Kissinjer.Tests
+          #- dotnet test test/Kissinjer.Tests
           # Create package
           - dotnet pack --configuration ${BUILD_CONFIGURATION} --version-suffix=beta-$BUILD_NUMBER project.json
           # Push generated package(s)
