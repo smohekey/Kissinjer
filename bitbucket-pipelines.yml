@@ -15,4 +15,4 @@ pipelines:
           # Create package
           - dotnet pack --configuration ${BUILD_CONFIGURATION} --version-suffix=beta-$BUILD_NUMBER src/Kissinjer/Kissinjer.csproj
           # Push generated package(s)
-          - "for file in src/Kissinjer/bin/${BUILD_CONFIGURATION}/*.nupkg; do dotnet nuget push $file -k ${NUGET_APIKEY}; done"
+          - "for file in src/Kissinjer/bin/${BUILD_CONFIGURATION}/*.nupkg; do dotnet nuget push $file -k ${NUGET_APIKEY} -s \"${NUGET_URL}\"; done"
