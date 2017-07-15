@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Company>Insightful Systems</Company>
     <Authors>Scott Mohekey</Authors>
     <Description>K.I.S.S Dependency Injection framework.</Description>
@@ -10,6 +10,8 @@
     <PackageProjectUrl>https://bitbucket.org/insightful-systems/kissinjer</PackageProjectUrl>
     <RepositoryUrl>https://bitbucket.org/insightful-systems/kissinjer</RepositoryUrl>
     <PackageTags>injection ioc</PackageTags>
+    <AssemblyVersion>0.1.1.0</AssemblyVersion>
+    <FileVersion>0.1.1.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
