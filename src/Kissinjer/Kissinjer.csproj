@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Version>0.1.0</Version>
+    <Company>Insightful Systems</Company>
+    <Authors>Scott Mohekey</Authors>
+    <Description>K.I.S.S Dependency Injection framework.</Description>
+    <Copyright>Insightful Systems</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
