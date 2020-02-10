@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Version>0.1.3</Version>
+    <Company>Insightful Systems</Company>
+    <Authors>Scott Mohekey</Authors>
+    <Description>K.I.S.S Dependency Injection framework.</Description>
+    <Copyright>Copyright © Scott Mohekey 2017</Copyright>
+    <PackageProjectUrl>https://bitbucket.org/insightful-systems/kissinjer</PackageProjectUrl>
+    <RepositoryUrl>https://bitbucket.org/insightful-systems/kissinjer</RepositoryUrl>
+    <PackageTags>injection ioc</PackageTags>
+    <AssemblyVersion>0.1.3.0</AssemblyVersion>
+    <FileVersion>0.1.3.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ContainerBuilder.cs" />
+    <Compile Remove="ContainerBuilderExtensions.cs" />
+  </ItemGroup>
+
+</Project>
